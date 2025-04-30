@@ -28,5 +28,7 @@ jobs:
 
       - name: Train and Test Model
         run: |
+          pwd
+          cd ModelCleaning
           ls -al 
           python train_test_dataset.py 
