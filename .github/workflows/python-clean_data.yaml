@@ -19,8 +19,8 @@ jobs:
           pip --version
           
       - name: clone code
-        uses: action/checkout@v4
-    #  - name: checkout workspace location
-    #    run: |
-    #      echo ${{ github.workspace}}
-    #      echo $GITHUB_WORKSPACE
+        uses: actions/checkout@v4
+      - name: checkout workspace location
+        run: |
+          echo ${{ github.workspace}}
+          echo $GITHUB_WORKSPACE
