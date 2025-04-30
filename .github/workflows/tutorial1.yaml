@@ -3,7 +3,7 @@ on:
   push:
       Branches:
         -dev
-  workflow_disptach
+  workflow_dispatch
 
 jobs:
   job1:
