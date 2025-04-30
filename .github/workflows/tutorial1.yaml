@@ -6,9 +6,12 @@ jobs:
     name: job1
     runs-on: ubuntu-latest
     steps:
-    - name: step1
-    - uses: docker://python:3.9
-      run: python --version
+      - name: setup python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.9
+      - name: Check Python version
+        run: python --version
   job2:
     name: job2
     runs-on: windows-latest
