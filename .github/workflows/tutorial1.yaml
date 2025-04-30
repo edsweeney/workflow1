@@ -1,5 +1,9 @@
 name: tutorial1
-on: push
+on: 
+  push:
+      Branches:
+        -dev
+  workflow_disptach
 
 jobs:
   job1:
