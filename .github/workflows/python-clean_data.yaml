@@ -18,10 +18,10 @@ jobs:
           python --version
           pip --version
           
-      - name: clone code
-        uses: actions/checkout@v4
-      - name: Clean Data
-        run: python cleandata.py
-        
-      -name: Train and Test Model
-       run: python train_test_dataset.py 
+   #   - name: clone code
+   #     uses: actions/checkout@v4
+   #   - name: Clean Data
+   #     run: python cleandata.py
+
+   #   -name: Train and Test Model
+   #    run: python train_test_dataset.py 
