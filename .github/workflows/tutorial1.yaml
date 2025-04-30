@@ -26,3 +26,9 @@ jobs:
       run: |
         echo "hello from step3"
         date
+  job4:
+    name: job4
+    runs-on: ubuntu-latest
+    steps:
+    - name: step4
+      run: echo "i am job 4"
