@@ -27,6 +27,7 @@ jobs:
         echo "hello from step3"
         date
   job4:
+    needs: [job1, job2]
     name: job4
     runs-on: ubuntu-latest
     steps:
