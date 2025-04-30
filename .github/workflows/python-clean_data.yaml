@@ -14,7 +14,7 @@ jobs:
             python-version: "3.10"
       - name: check version of python
         run: |
-          pip install pandas
+          pip install pandas, joblib
           python --version
           pip --version
           
