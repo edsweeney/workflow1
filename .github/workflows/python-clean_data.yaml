@@ -20,6 +20,7 @@ jobs:
           
       - name: clone code
         uses: action/checkout@v4
+      - name: checkout workspace location
         run: |
           echo ${{ github.workspace}}
           echo $GITHUB_WORKSPACE
