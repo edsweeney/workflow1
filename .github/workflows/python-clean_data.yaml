@@ -20,8 +20,11 @@ jobs:
           
       - name: clone code
         uses: actions/checkout@v4
-   #   - name: Clean Data
-   #     run: python cleandata.py
+
+      - name: Clean Data
+        run: |
+          cd ModelCleaning
+          python cleandata.py
 
    #   -name: Train and Test Model
    #    run: python train_test_dataset.py 
