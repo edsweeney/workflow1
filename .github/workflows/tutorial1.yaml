@@ -8,7 +8,7 @@ jobs:
     steps:
     - name: step1
     - uses: docker://python:3.9
-      
+      run: python --version
   job2:
     name: job2
     runs-on: windows-latest
