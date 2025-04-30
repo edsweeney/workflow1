@@ -18,8 +18,8 @@ jobs:
           python --version
           pip --version
           
-   #   - name: clone code
-   #     uses: actions/checkout@v4
+      - name: clone code
+        uses: actions/checkout@v4
    #   - name: Clean Data
    #     run: python cleandata.py
 
