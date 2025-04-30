@@ -27,7 +27,7 @@ jobs:
           pip install pandas
           python --version
           pip --version
-          panadas --version
+          pandas --version
       - name: create artefact
         run: |
           touch artifact.py
