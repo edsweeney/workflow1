@@ -20,7 +20,8 @@ jobs:
           
       - name: clone code
         uses: actions/checkout@v4
-      - name: checkout workspace location
-        run: |
-          echo ${{ github.workspace}}
-          echo $GITHUB_WORKSPACE
+      - name: Clean Data
+        run: python cleandata.py
+        
+      -name: Train and Test Model
+       run: python train_test_dataset.py 
